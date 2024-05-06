@@ -7,12 +7,12 @@ Authors:
 [Hojoon Lee](https://joonleesky.github.io/),
 Hyunseo Cho,
 Donghu Kim,
-[Hyunseung Kim](https://mynsng.github.io/)\*, 
+[Hyunseung Kim](https://mynsng.github.io/), 
 Dukgi Min,
 [Jaegul Choo](https://sites.google.com/site/jaegulchoo/), and 
 [Clare Lyle](https://clarelyle.com/).
 
-<img src="assets/icml2024hnt.png" alt="plot" width="300">
+<img src="assets/icml2024hnt.png" alt="plot" width="250">
 
 
 ## Requirements
