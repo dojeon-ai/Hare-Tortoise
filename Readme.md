@@ -1,7 +1,7 @@
-# Slow and Steady Wins the Race: Maintaining Plasticity with Hare and Tortoise Networks
+# Maintaining Plasticity with Hare and Tortoise Networks
 
-This repository is an official PyTorch implementation of the paper, Slow and Steady Wins the Race
-Maintaining Plasticity with Hare and Tortoise Networks, ICML 2024.
+This repository is an official PyTorch implementation of the paper, *Slow and Steady Wins the Race
+Maintaining Plasticity with Hare and Tortoise Networks*, ICML 2024.
 
 Authors: 
 [Hojoon Lee](https://joonleesky.github.io/),
