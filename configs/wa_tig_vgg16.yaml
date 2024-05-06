@@ -1,0 +1,19 @@
+trainer:
+  optimizer:
+    lr: 0.001
+    weight_decay: 0.001
+
+dataset:
+  train:
+    transforms:
+      crop_type: 'random_pad'
+      crop_size: 64
+      pad_size: 4
+      horizontal_flip: true
+      
+defaults:
+- _warm_start
+- dataset: tig
+- model: vgg16_mlp
+- trainer: base
+- _self_

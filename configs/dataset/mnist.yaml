@@ -1,0 +1,40 @@
+type: 'mnist'
+in_shape: [1, 28, 28]
+output_size: 10
+num_tasks: ${num_tasks}
+input_data_ratios: ${input_data_ratios}
+label_noise_ratios: ${label_noise_ratios}
+buffer_size: 60000
+
+train:
+  root: '/home/hojoonlee/assets/MNIST/train'
+  transforms:
+    crop_type: 'none' # [none, center, random_resize, random_pad]
+    scale: null
+    crop_size: null   
+    pad_size: null
+    horizontal_flip: false
+    gray_scale: true
+    normalize:
+      mean: [0.4914] 
+      std: [0.3081] # https://github.com/pytorch/examples/blob/main/mnist/main.py
+  shuffle: true
+
+test:
+  root: '/home/hojoonlee/assets/MNIST/val' # './data/CIFAR10/val'
+  transforms:
+    crop_type: 'none' # [center, random, none]
+    scale: null
+    crop_size: null
+    pad_size: null
+    horizontal_flip: false
+    gray_scale: true
+    normalize:
+      mean: [0.4914] 
+      std: [0.3081] # https://github.com/pytorch/examples/blob/main/mnist/main.py
+  shuffle: false
+
+dataloader:
+  batch_size: 256
+  num_workers: 4
+  pin_memory: true

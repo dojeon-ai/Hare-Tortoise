@@ -1,0 +1,11 @@
+trainer:
+  optimizer:
+    lr: 0.003
+    weight_decay: 0.05
+
+defaults:
+- _warm_start
+- dataset: cifar100
+- model: vit-ti_linear
+- trainer: base
+- _self_

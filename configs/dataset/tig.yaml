@@ -1,0 +1,40 @@
+type: 'tig'
+in_shape: [3, 64, 64]
+output_size: 200
+num_tasks: ${num_tasks}
+input_data_ratios: ${input_data_ratios}
+label_noise_ratios: ${label_noise_ratios}
+buffer_size: 100000
+
+train:
+  root: '/home/hojoonlee/assets/TIG/train' 
+  transforms:
+    crop_type: 'none' # [none, center, random_resize, random_pad]
+    scale: null
+    crop_size: null   
+    pad_size: null
+    horizontal_flip: false
+    gray_scale: false
+    normalize:
+      mean: [0.485, 0.456, 0.406]  # https://github.com/DennisHanyuanXu/Tiny-ImageNet/blob/master/src/data_prep.py
+      std: [0.229, 0.224, 0.225]
+  shuffle: true
+
+test:
+  root: '/home/hojoonlee/assets/TIG/val' 
+  transforms:
+    crop_type: 'none' # [center, random, none]
+    scale: null
+    crop_size: null
+    pad_size: null
+    horizontal_flip: false
+    gray_scale: false
+    normalize:
+      mean: [0.485, 0.456, 0.406] 
+      std: [0.229, 0.224, 0.225]
+  shuffle: false
+
+dataloader:
+  batch_size: 256 # 256
+  num_workers: 4
+  pin_memory: true

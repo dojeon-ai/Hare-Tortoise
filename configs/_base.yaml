@@ -1,0 +1,12 @@
+project_name: 'plasticity'
+group_name: 'test'
+exp_name: 'test'
+device: 'cuda:0'
+seed: 0
+
+num_tasks: 1
+input_data_ratios: [1.0]
+label_noise_ratios: [0.0]
+
+defaults:
+- _self_

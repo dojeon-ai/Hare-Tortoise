@@ -1,0 +1,6 @@
+in_shape: ${dataset.in_shape}
+output_size: ${dataset.output_size}
+
+defaults:
+- backbone: vgg16
+- head: mlp

@@ -1,0 +1,11 @@
+trainer:
+  optimizer:
+    lr: 0.001
+    weight_decay: 0.001
+
+defaults:
+- _warm_start
+- dataset: cifar10
+- model: resnet18_gap
+- trainer: base
+- _self_

@@ -1,0 +1,68 @@
+# defaults
+in_shape: ${dataset.in_shape}
+output_size: ${dataset.output_size}
+num_tasks: ${num_tasks}
+input_data_ratios: ${input_data_ratios}
+label_noise_ratios: ${label_noise_ratios}
+seed: ${seed}
+
+# performance optimization
+use_amp: True
+
+################
+# train
+base_epochs: 100
+clip_grad_norm: 0.5
+
+optimizer_type: 'adamw'
+optimizer:
+  lr: 0.0001
+  weight_decay: 0.00001
+  betas: [0.9, 0.999]
+  eps: 0.00000001
+
+scheduler:
+  first_cycle_steps: null
+  cycle_mult: 1.0
+  max_lr: ${trainer.optimizer.lr}
+  min_lr: ${trainer.optimizer.lr}
+  warmup_lr: 0.0
+  warmup_ratio: 0.1
+  gamma: 1.0
+
+###################
+# regularizations
+early_stop:
+  lmbda: 1.0 # fraction of epochs to stop
+
+ema: 0.0
+self_distill:
+  lmbda: 0.0
+  temp: 1.0
+
+hare_tortoise:
+  reset_every: -1.0
+
+spectral: 
+  lmbda: 0.0
+
+regen:
+  b_lmbda: 0.0
+  h_lmbda: 0.0
+
+reinit:
+  b_lmbda: 0.0
+  h_lmbda: 0.0
+
+redo:
+  lmbda: 0.0
+
+################ 
+# evaluation
+log_every: 1000       # per_step
+base_test_every: 5    # per_epoch
+analysis_samples: 512
+
+# hessian anlysis (time consuming)
+num_eigen_vals: 0
+num_singular_vals: 0

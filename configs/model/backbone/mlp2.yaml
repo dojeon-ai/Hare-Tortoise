@@ -1,0 +1,4 @@
+type: 'mlp'
+in_shape: ${dataset.in_shape}
+norm_type: 'bn'  # to relieve the pre-train then fine-tune discrepancy
+hidden_dims: [512, 256] # https://kaen2891.tistory.com/88

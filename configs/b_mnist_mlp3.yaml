@@ -1,0 +1,11 @@
+trainer:
+  optimizer:
+    lr: 0.001
+    weight_decay: 0.0001
+
+defaults:
+- _base
+- dataset: mnist
+- model: mlp2_linear # backbone + head = 3-layer
+- trainer: base
+- _self_

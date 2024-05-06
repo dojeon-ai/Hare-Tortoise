@@ -1,0 +1,5 @@
+type: 'resnet'
+net_type: 'resnet18'
+in_shape: ${dataset.in_shape}
+downsample: false
+norm_type: 'bn'

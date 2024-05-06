@@ -1,0 +1,12 @@
+type: 'vit' 
+net_type: 'vit_tiny' # https://arxiv.org/pdf/2012.12877.pdf page 9
+in_shape: ${dataset.in_shape}
+patch_size: 4
+dim: 192             # latent vector size D (heads x dim_head). Base: 768 (6 x 64), b: 384
+heads: 3
+dim_head: 64 
+depth: 12
+mlp_dim: 768         # 192*4
+pool: 'cls'          # ['cls', 'mean']
+dropout: 0.1
+emb_dropout: 0.1

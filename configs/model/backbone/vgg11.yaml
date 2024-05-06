@@ -1,0 +1,4 @@
+type: 'vgg'
+net_type: 'vgg11'
+in_shape: ${dataset.in_shape}
+norm_type: 'bn'
