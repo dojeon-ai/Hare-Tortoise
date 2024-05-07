@@ -50,17 +50,17 @@ python run.py
 
 For Figure 2 & 3
 ```
-bash scrtips/paper/warm_start_wo_aug/[method].sh
+bash scripts/paper/warm_start_wo_aug/[method].sh
 ```
 
 For Figure 5
 ```
-bash scrtips/paper/warm_start_aug/[method].sh
+bash scripts/paper/warm_start_aug/[method].sh
 ```
 
 For Figure 6
 ```
-bash scrtips/paper/continual/[method].sh
+bash scripts/paper/continual/[method].sh
 ```
 
 
