@@ -5,7 +5,7 @@ Maintaining Plasticity with Hare and Tortoise Networks*, ICML 2024.
 
 Authors: 
 [Hojoon Lee](https://joonleesky.github.io/),
-Hyunseo Cho,
+Hyeonseo Cho,
 Donghu Kim,
 [Hyunseung Kim](https://mynsng.github.io/), 
 Dukgi Min,
@@ -58,9 +58,10 @@ For Figure 5
 bash scripts/paper/warm_start_aug/[method].sh
 ```
 
-For Figure 6
+For Figure 6.a & 6.b
 ```
 bash scripts/paper/continual/[method].sh
+bash scripts/paper/continual_buf/[method].sh
 ```
 
 
