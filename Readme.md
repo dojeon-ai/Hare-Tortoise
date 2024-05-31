@@ -6,8 +6,8 @@ Maintaining Plasticity with Hare and Tortoise Networks*, ICML 2024.
 Authors: 
 [Hojoon Lee](https://joonleesky.github.io/),
 Hyeonseo Cho,
-Donghu Kim,
 [Hyunseung Kim](https://mynsng.github.io/), 
+Donghu Kim,
 Dukgi Min,
 [Jaegul Choo](https://sites.google.com/site/jaegulchoo/), and 
 [Clare Lyle](https://clarelyle.com/).
