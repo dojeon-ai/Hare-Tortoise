@@ -3,7 +3,7 @@ cd ../../../
 
 sp_rates=(0.8)
 configs=("cifar10_resnet18" "cifar100_vit-ti" "tig_vgg16")
-
+ 
 for seed in {1..5}; do
     for config in "${configs[@]}"; do
         for sp in "${sp_rates[@]}"; do
