@@ -60,7 +60,6 @@ bash scripts/paper/warm_start_aug/[method].sh
 
 For Figure 6.a & 6.b
 ```
-bash scripts/paper/continual/[method].sh
 bash scripts/paper/continual_buf/[method].sh
 ```
 
